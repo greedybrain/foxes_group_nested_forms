@@ -1,0 +1,9 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  boat: one
+  customer: one
+
+two:
+  boat: two
+  customer: two

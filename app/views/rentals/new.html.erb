@@ -1,0 +1,10 @@
+<%= form_for @rental do |f| %>
+     <%= f.label :reservation %><br>
+     <%= f.date_select :reservation %><br><br>
+     <%= f.fields_for :customer, @customer do |customer| %>
+          <%= customer.label :name %><br>
+          <%= customer.text_field :name %><br><br>
+     <% end %>
+     <%= f.collection_radio_buttons :boat_id, Boat.all, :id, :name %>
+     <%= f.submit %>
+<% end %>
